@@ -6,6 +6,16 @@
 
 EUDI Doc Architecture And Reference Framework starts with a simple goal: turn project knowledge into a documentation space that can be maintained, previewed, and published with confidence. Its shape tells the same story: the documentation source sits at the center so a maintainer can understand the project before diving into individual files.
 
+## Detailed Description
+
+EUDI Doc Architecture And Reference Framework is a documentation publishing workspace for the European Digital Identity Wallet Architecture and Reference Framework. This README is meant to explain the project like a handoff note: what the idea is, why the repository exists, and how someone can start working with it without opening every file first.
+
+The documentation source is the product here. Navigation, publishing commands, and generated output need to be easy to preview so the docs can evolve without breaking the reader experience.
+
+At the top level, the most important entry points are `.github`, `CHANGELOG`, `CONTRIBUTING.md`, `LICENSE`, `Makefile`, and `SECURITY.md`. Together they show the current boundary of the project and make it easier to separate product code, support files, documentation, and experiments.
+
+The visible stack currently points to `MkDocs` and `Make`. Keep this list honest as the project changes so the README remains useful as a first technical map.
+
 ## What It Includes
 
 - Documentation sources that can be previewed, exported, or published.

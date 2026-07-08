@@ -1,80 +1,82 @@
-# EUDI Doc Architecture And Reference Framework
+# The European Digital Identity Wallet
 
-> EUDI Doc Architecture And Reference Framework is a documentation publishing workspace for the European Digital Identity Wallet Architecture and Reference Framework.
 
-## The Story
+![Digital Identity for all Europeans - A personal digital wallet for EU citizens and residents](./docs/media/top-banner.png)
 
-EUDI Doc Architecture And Reference Framework starts with a simple goal: turn project knowledge into a documentation space that can be maintained, previewed, and published with confidence. Its shape tells the same story: the documentation source sits at the center so a maintainer can understand the project before diving into individual files.
 
-## Detailed Description
+## The proposed Digital Identity Regulation
 
-EUDI Doc Architecture And Reference Framework is a documentation publishing workspace for the European Digital Identity Wallet Architecture and Reference Framework. This README is meant to explain the project like a handoff note: what the idea is, why the repository exists, and how someone can start working with it without opening every file first.
+Under the [Electronic Identification, Authentication and Trust Services (eIDAS)
+Regulation](https://digital-strategy.ec.europa.eu/en/policies/eidas-regulation),
+EU Member States may, on a voluntary basis, notify and recognise, national
+electronic identification schemes in their Member States. The recognition of
+notified electronic identification became mandatory in 2018.
+Yet, there is no requirement for Member States to develop a national electronic
+identification and to make it interoperable with those in other Member States.
+This has led to discrepancies between countries.
+The new proposal for a Regulation on digital identity will address shortcomings
+in eIDAS by improving the effectiveness of the framework and extending its
+benefits to the private sector.
+Member States will offer citizens and businesses digital wallets that will be
+able to link various aspects of their national digital identities. These may be
+provided by public authorities or the private sector, if they are recognized by
+the Member States.
 
-The documentation source is the product here. Navigation, publishing commands, and generated output need to be easy to preview so the docs can evolve without breaking the reader experience.
+The EU Digital Identity Wallet will be:
 
-At the top level, the most important entry points are `.github`, `CHANGELOG`, `CONTRIBUTING.md`, `LICENSE`, `Makefile`, and `SECURITY.md`. Together they show the current boundary of the project and make it easier to separate product code, support files, documentation, and experiments.
+* **made available to anyone who wants to use it**:  Any EU citizen, resident, and business in the EU who would like to make use of the EU Digital Identity will be able to do so.
+* **used widely**: EU Digital Identity Wallets will be used as a way to identify users when providing them with access to public and private digital services across the EU.
+* **controlled by users**: The EU Digital Identity Wallets will enable people to choose and keep track of their identity, data and certificates which they share with third parties. Anything which is not necessary to share will not be shared.
 
-The visible stack currently points to `MkDocs` and `Make`. Keep this list honest as the project changes so the README remains useful as a first technical map.
+Consumers should also be able to access services online without having to use private platforms or unnecessarily sharing personal data. They will have full control of the data they share.
 
-## What It Includes
+## The Architecture and Reference Framework
 
-- Documentation sources that can be previewed, exported, or published.
+On 3 June 2021, the European Commission adopted a Recommendation
+calling on Member States to work towards the development of a Toolbox
+including a technical Architecture and Reference Framework
+a set of common standards and technical specifications and a
+set of common guidelines and best practices.
 
-## How It Is Put Together
+The Recommendation specifies that these outcomes will serve as a basis
+for the implementation of the proposal for a European Digital Identity
+Framework, without the process of developing the Toolbox interfering
+with, or prejudging the legislative process.
 
-| Path | Role |
-| --- | --- |
-| `.github` | GitHub workflow and repository automation |
-| `.gitignore` | ignored local, dependency, and build files |
-| `CHANGELOG` | release and change history |
-| `CONTRIBUTING.md` | contribution guidelines |
-| `LICENSE` | license terms |
-| `Makefile` | repeatable local commands |
-| `SECURITY.md` | security reporting guidance |
-| `docs` | documentation source |
-| `media` | static assets and presentation files |
-| `mkdocs.yml` | documentation source |
-| `security` | project file or folder |
+The Recommendation foresees that the Toolbox is developed by Member
+States’ experts in the eIDAS Expert Group  in close coordination with
+the Commission and, where relevant for the functioning of the European
+Digital Identity (EUDI) Wallet infrastructure, other concerned public
+and private sector parties.
 
-## Local Development
+This repository contains the "[Architecture and Reference Framework](docs/arf.md)"
+(hereinafter the [ARF](docs/arf.md)).
 
-```bash
-git clone https://github.com/ENZOMOTIVE/eudi-doc-architecture-and-reference-framework.git
-cd eudi-doc-architecture-and-reference-framework
-```
+The current **authoritative version** is tagged as [realease/tag in this
+repository](https://github.com/eu-digital-identity-wallet/architecture-and-reference-framework/releases).
 
-For documentation sites, install MkDocs and run `mkdocs serve` to preview the site locally.
+## Contributing
 
-## Command Surface
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct,
+and the process for submitting pull requests to us.
 
-| Area | Commands |
-| --- | --- |
-| Documentation | `mkdocs serve`, `mkdocs build` |
-| Makefile | `make`, `make clean`, and other declared targets |
+## Versioning
 
-## Configuration
+We use [SemVer](http://semver.org/) for versioning. For the versions available,
+see the [tags on this repository](https://github.com/eu-digital-identity-wallet/architecture-and-reference-framework/tags).
 
-- Review the documentation navigation and publishing settings before releasing generated docs.
+## Authors
 
-## Quality Checks
-
-- Run `mkdocs build` before publishing documentation changes.
-
-## Where To Take It Next
-
-- Link the published documentation site and keep the local preview command next to the publishing command.
-- Keep setup commands current whenever dependencies, scripts, or deployment targets change.
-- Record important product decisions here so the repository keeps its story as the code evolves.
-
-## Project Metadata
-
-| Field | Details |
-| --- | --- |
-| Repository | `ENZOMOTIVE/eudi-doc-architecture-and-reference-framework` |
-| Categories | `Protocol` |
-| Primary stack | MkDocs, Make |
-
+See the list of [contributors](https://github.com/eu-digital-identity-wallet/architecture-and-reference-framework/graphs/contributors) who participated in this project.
 
 ## License
 
-See the repository license file for usage terms.
+This project is licensed under the [Attribution 4.0
+International](http://creativecommons.org/licenses/by/4.0/) - see the
+[LICENSE.txt](LICENSE) file for details.
+
+## [European Commission website](https://commission.europa.eu/index_en)
+
+* [Contact the European Commission](https://commission.europa.eu/about-european-commission/contact_en)
+* [Follow the European Commission on social media](https://european-union.europa.eu/contact-eu/social-media-channels_en#/search?page=0&institutions=european_commission)
+* [Resources for partners](https://commission.europa.eu/resources-partners_en)

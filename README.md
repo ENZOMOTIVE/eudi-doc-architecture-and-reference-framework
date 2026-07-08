@@ -1,83 +1,69 @@
 # EUDI Doc Architecture And Reference Framework
 
-## Project Tags
+> EUDI Doc Architecture And Reference Framework is a documentation publishing workspace for the European Digital Identity Wallet Architecture and Reference Framework.
 
-- `Protocol`
+## The Story
 
-## Overview
+EUDI Doc Architecture And Reference Framework starts with a simple goal: turn project knowledge into a documentation space that can be maintained, previewed, and published with confidence. Its shape tells the same story: the documentation source sits at the center so a maintainer can understand the project before diving into individual files.
 
-EUDI Doc Architecture And Reference Framework is a documentation repository for publishing and exporting structured project documentation with MkDocs and supporting tooling.
+## What It Includes
 
-## Features
+- Documentation sources that can be previewed, exported, or published.
 
-- MkDocs documentation site and structured Markdown content
-- Makefile workflow for repeatable local documentation or build tasks
+## How It Is Put Together
 
-## Tech Stack
+| Path | Role |
+| --- | --- |
+| `.github` | GitHub workflow and repository automation |
+| `.gitignore` | ignored local, dependency, and build files |
+| `CHANGELOG` | release and change history |
+| `CONTRIBUTING.md` | contribution guidelines |
+| `LICENSE` | license terms |
+| `Makefile` | repeatable local commands |
+| `SECURITY.md` | security reporting guidance |
+| `docs` | documentation source |
+| `media` | static assets and presentation files |
+| `mkdocs.yml` | documentation source |
+| `security` | project file or folder |
 
-- MkDocs
-- Make
-
-## Project Structure
-
-- `.github` - project file or directory
-- `.gitignore` - project file or directory
-- `CHANGELOG` - project file or directory
-- `CONTRIBUTING.md` - project file or directory
-- `LICENSE` - project file or directory
-- `Makefile` - repeatable build or documentation commands
-- `SECURITY.md` - project file or directory
-- `docs` - documentation source content
-- `media` - project file or directory
-- `mkdocs.yml` - MkDocs site configuration
-- `security` - project file or directory
-
-## Getting Started
-
-### Prerequisites
-
-- Git
-
-### Setup and Run
+## Local Development
 
 ```bash
 git clone https://github.com/ENZOMOTIVE/eudi-doc-architecture-and-reference-framework.git
 cd eudi-doc-architecture-and-reference-framework
 ```
 
-```bash
-python3 -m pip install mkdocs
-mkdocs serve
-```
+For documentation sites, install MkDocs and run `mkdocs serve` to preview the site locally.
 
-Use `make`, `make serve`, or `make clean` when the Makefile targets are present and match your workflow.
+## Command Surface
 
-## Commands
-
-- `mkdocs serve`: preview the documentation site locally.
-- `mkdocs build`: generate the static documentation site.
-- `make`: run the default Makefile workflow.
-- `make clean`: remove generated build artifacts when the target exists.
+| Area | Commands |
+| --- | --- |
+| Documentation | `mkdocs serve`, `mkdocs build` |
+| Makefile | `make`, `make clean`, and other declared targets |
 
 ## Configuration
 
-- Review `mkdocs.yml` before publishing to confirm navigation, theme, and output settings.
+- Review the documentation navigation and publishing settings before releasing generated docs.
 
-## Testing and Quality
+## Quality Checks
 
-- No automated test workflow is declared yet; add tests and document the command here as the project matures.
+- Run `mkdocs build` before publishing documentation changes.
 
-## Documentation Notes
+## Where To Take It Next
 
-- Keep this README aligned with the actual source layout and commands.
-- Add screenshots, API examples, contract addresses, or deployment links when they become stable.
-- Update the project tags when the scope changes.
+- Link the published documentation site and keep the local preview command next to the publishing command.
+- Keep setup commands current whenever dependencies, scripts, or deployment targets change.
+- Record important product decisions here so the repository keeps its story as the code evolves.
 
-## Contributing
+## Project Metadata
 
-1. Create a focused branch for the change.
-2. Update code and documentation together.
-3. Run the relevant checks before opening a pull request.
+| Field | Details |
+| --- | --- |
+| Repository | `ENZOMOTIVE/eudi-doc-architecture-and-reference-framework` |
+| Categories | `Protocol` |
+| Primary stack | MkDocs, Make |
+
 
 ## License
 
